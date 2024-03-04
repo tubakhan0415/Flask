@@ -1,0 +1,164 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "How are you", "Is anyone there?", "Hello", "Good day"],
+      "responses": ["Hey :-)", "Hello, thanks for visiting", "Hi there, what can I do for you?", "Hi there, how can I help?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "loan_inquiry",
+      "patterns": ["Tell me about loans", "I want to know about different types of loans", "What loans do you offer?"],
+      "responses": ["Sure! We offer Personal Loans, Professional Loans, and Business Loans. You can also inquire about EMIs and Average Bank Balance."]
+    },
+    {
+      "tag": "personal_loan",
+      "patterns": ["Tell me about Personal Loans", "I am interested in a Personal Loan"],
+      "responses": ["Great! To proceed with a Personal Loan, I'll need some information. Could you please provide your total salary?"]
+    },
+    {
+      "tag": "total_obligation",
+      "patterns": ["My Total salary is {number}", "My salary is {number}"],
+      "responses": ["Thanks! Please enter your total obligation."]
+    },
+    {
+      "tag": "select_bank",
+      "patterns": ["My total obligation is {number}", "my obligation is {number}"],
+      "responses": ["Got it! Please select your bank from HDFC, ICICI, Kotak, Axis, Bajaj, TATA, Chola, L&T, Godrej, and YES bank."]
+    },
+    {
+      "tag": "Bank",
+      "patterns": ["HDFC", "ICICI", "Kotak", "Axis", "Bajaj", "TATA", "Chola", "L&T", "Godrej", "YES bank"],
+      "responses": ["Thanks! I will inform you in a minute."]
+    },
+    {
+      "tag": "professional_loan",
+      "patterns": ["Tell me about Professional Loans", "I am interested in a Professional Loan"],
+      "responses": ["Certainly! For a Professional Loan, I'll need to know your profession."]
+    },
+    {
+      "tag": "experience",
+      "patterns": ["MBBS", "BAMS", "BDS", "BHMS", "MD/MS"],
+      "responses": ["Thanks! Please enter the number of years of your professional experience."]
+    },
+    {
+      "tag": "cibil_score",
+      "patterns": ["I have {number} years of experience", "my experience is of {number} years"],
+      "responses": ["Great! Do you have a CIBIL score? (yes or no)"]
+    },
+    {
+      "tag": "business_loan",
+      "patterns": ["Tell me about Business Loans", "I am interested in a Business Loan"],
+      "responses": ["Sure thing! To proceed with a Business Loan, do you want to calculate the loan amount based on turnover, net profit, or gross profit?"]
+    },
+    {
+      "tag": "turnover",
+      "patterns": ["Turnover", "On the basis of turnover"],
+      "responses": ["Great! Please enter your turnover."]
+    },
+    {
+      "tag": "turnover_obligation",
+      "patterns": ["my turnover is {number}", "my monthly Turnover is {number}"],
+      "responses": ["Thanks! Please enter your obligation for the turnover (monthly/yearly)."]
+    },
+    {
+      "tag": "reply_of_turnover",
+      "patterns": ["my obligation is {number}", "my monthly obligation is {number}"],
+      "responses": ["Thanks!I will inform you in a minute"]
+    },
+    {
+      "tag": "net_profit",
+      "patterns": ["Net Profit", "On the basis of net profit"],
+      "responses": ["Sure! Please enter your net profit."]
+    },
+    {
+      "tag": "net_profit_obligation",
+      "patterns": ["My net profit is {number}", "my net profit of business is {number}"],
+      "responses": ["Thanks! Please enter your obligation for the net profit (monthly/yearly)."]
+    },
+    {
+      "tag": "reply_of_net_profit",
+      "patterns": ["my obligation is {number}", "my monthly obligation is {number}"],
+      "responses": ["Thanks!I will inform you in a minute"]
+    },
+    {
+      "tag": "gross_profit",
+      "patterns": ["Gross Profit", "On the basis of gross profit", "GP"],
+      "responses": ["Certainly! Please enter your gross profit."]
+    },
+    {
+      "tag": "gross_profit_obligation",
+      "patterns": ["my gross Profit is {number}", "My GP is {number}"],
+      "responses": ["Thanks! Please enter your obligation for the gross profit (monthly/yearly)."]
+    },
+    {
+      "tag": "reply_of_gross_profit",
+      "patterns": ["my obligation is {number}", "my monthly obligation is {number}"],
+      "responses": ["Thanks!I will inform you in a minute"]
+    },
+    {
+      "tag": "emi_calculation",
+      "patterns": ["Tell me about EMI calculations", "I want to calculate EMIs"],
+      "responses": ["Certainly! To calculate EMIs, I'll need the loan amount."]
+    },
+    {
+      "tag": "interest_rate",
+      "patterns": ["my loan amount is {number}", "loan amount is {number}"],
+      "responses": ["Thanks! Please enter the interest rate."]
+    },
+    {
+      "tag": "loan_tenor",
+      "patterns": ["my interest rate is {number}", "the rate of interest is {number}"],
+      "responses": ["Great! Please enter the loan tenor."]
+    },
+    {
+      "tag": "reply_of_loan_tenor",
+      "patterns": ["my loan tenor is {number}", "loan tenor is {number}"],
+      "responses": ["Thanks!I will let you know in a minute"]
+    },
+    {
+      "tag": "average_bank_balance",
+      "patterns": ["Tell me about Average Bank Balance", "How is average bank balance calculated?"],
+      "responses": ["Sure! To calculate the Average Bank Balance, I'll need the amount you have in your account on 5th dates."]
+    },
+    {
+      "tag": "balance_5",
+      "patterns": ["my balance on 5th is {number}", "my balance on 5 {number}"],
+      "responses": ["Thanks! Please enter the balance you have on the 10th of the month."]
+    },
+    {
+      "tag": "balance_10",
+      "patterns": ["my balance on 10th is {number}", "my balance on 10 {number}"],
+      "responses": ["Got it! Please enter the balance you have on the 15th of the month."]
+    },
+    {
+      "tag": "balance_15",
+      "patterns": ["my balance on 15th is {number}", "my balance on 15 {number}"],
+      "responses": ["Thanks! Please enter the balance you have on the 20th of the month."]
+    },
+    {
+      "tag": "balance_20",
+      "patterns": ["my balance on 20th is {number}", "my balance on 20 {number}"],
+      "responses": ["Sure! Please enter the balance you have on the 25th of the month."]
+    },
+    {
+      "tag": "balance_25",
+      "patterns": ["my balance on 25th is {number}", "my balance on 25 {number}"],
+      "responses": ["Sure! Please enter the balance you have on the 30th of the month."]
+    },
+    {
+      "tag": "balance_30",
+      "patterns": ["my balance on 30th is {number}", "my balance on 30 {number}"],
+      "responses": ["Got it!I will tell you in a minute."]
+    }
+  ]
+}
